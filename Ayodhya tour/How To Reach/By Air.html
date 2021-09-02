@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>By Air- How To Reach</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/Ayodhya Image/favicon logo/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/Ayodhya Image/favicon logo/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/Ayodhya Image/favicon logo/favicon-16x16.png">
+    <link rel="manifest" href="/Ayodhya Image/favicon logo/site.webmanifest">
+    <link rel="stylesheet" href="By Air.css">
+</head>
+
+<body>
+
+    <header class="banner">
+        <!-- <h1>
+          Ayodhya Tour
+        </h1> -->
+        <!-- <img src="/Ayodhya Image/logo.jpeg" alt="" width="1515" height="300" style="background-attachment: fixed;"> -->
+    </header>
+
+    <!-- Navigation decoration -->
+    <nav>
+        <a href="http://127.0.0.1:5500/index.html">Home</a>
+        <a href="http://127.0.0.1:5500/Places/places.html">Places</a>
+        <a href="#">Hotels</a>
+        <a href="#">Hospitals</a>
+        <!-- <a href="#">How To Reach</a> -->
+
+        <div class="dropdown">
+            <button class="dropbtn">How To Reach
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="http://127.0.0.1:5500/How%20To%20Reach/By%20Train.html">By Train</a>
+                <a href="http://127.0.0.1:5500/How%20To%20Reach/By%20Air.html">By Air</a>
+            </div>
+        </div>
+
+
+        <a class="login" href="#">Login/SignUp</a>
+    </nav>
+
+    <main>
+
+        <section>
+
+            <!-- image slider decoration -->
+            <div class="slideshow-container">
+
+                <div class="mySlides fade">
+                    <!-- <div class="numbertext">1 / 3</div> -->
+                    <img src="/Ayodhya Image/slider-2.jpg" width="1515" height="300">
+                    <div class="text">Caption Text</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <!-- <div class="numbertext">2 / 3</div> -->
+                    <img src="/Ayodhya Image/slider-3.jpg" width="1515" height="300">
+                    <div class="text">Caption Two</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <!-- <div class="numbertext">3 / 3</div> -->
+                    <img src="/Ayodhya Image/slider-4.jpg" width="1515" height="300">
+                    <div class="text">Caption Three</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <!-- <div class="numbertext">3 / 3</div> -->
+                    <img src="/Ayodhya Image/slider-5.jpg" width="1515" height="300">
+                    <div class="text">Caption Three</div>
+                </div>
+
+            </div>
+
+        </section>
+
+        <div style="text-align:center">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+
+        <section>
+
+            <h1 class="heading">
+                How To Reach Ayodhya
+            </h1>
+
+            <hr style="border-top: 10px dotted red;">
+
+            <h2 style="font-size: 40px; margin: 10px;">By Air</h2>
+
+            <p style="padding: 10px; font-size: 30px;">
+                <img src="/ayodhya tour img/air port.jpg" alt="" title="Ayodhya Railway Station"
+                    style="float: right; width: 300px; height: 170px; margin-left: 10px; -webkit-box-reflect: below 1px linear-gradient(to bottom, rgba(0,0,0,0.0), rgba(0,0,0,0.4));">
+                Since Ayodhya does not have an airport, one has to reach either Chaudhary Charan Singh Airport at Amausi
+                in Lucknow,<br> <br> which is at a distance of 134 km or Bamrauli Airport in Prayagraj which is about 166 km
+                away.
+            </p>
+
+        </section>
+    </main>
+    <br>
+    <br>
+    <br>
+
+    <!-- footer decoration  -->
+    <footer>
+        <a href="#">FAQ</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Disclaimer</a>
+        <a href="#">Contact US</a>
+        <a class="copyright" href="#">Copyright &copy;2021 | Ayodhya Tourism</a>
+    </footer>
+
+    <!-- slider using javascript -->
+    <script>
+        var slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) { slideIndex = 1 }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+            setTimeout(showSlides, 5000); // Change image every 4 seconds
+        }
+    </script>
+
+</body>
+
+</html>

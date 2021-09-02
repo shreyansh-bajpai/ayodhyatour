@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ayodhya Tourism | Home </title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- header decoration -->
+  <header>
+    <!-- <h1>
+      Ayodhya Tour
+    </h1> -->
+    <img src="Ayodhya Image/photo3.jpg" alt="" width="1515" height="300">
+  </header>
+
+  <!-- Navigation decoration -->
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">Places</a>
+    <a href="#">Hotels</a>
+    <a href="#">Hospitals</a>
+    <a href="#">How To Reach</a>
+    <a class="login" href="#">Login/SignUp</a>
+  </nav>
+
+  <main>
+
+    <section>
+
+      <!-- image slider decoration -->
+      <div class="slideshow-container">
+
+        <div class="mySlides fade">
+          <!-- <div class="numbertext">1 / 3</div> -->
+          <img src="Ayodhya Image/photo.jpg" width="1515" height="300">
+          <div class="text">Caption Text</div>
+        </div>
+
+        <div class="mySlides fade">
+          <!-- <div class="numbertext">2 / 3</div> -->
+          <img src="Ayodhya Image/photo 2.jpg" width="1515" height="300">
+          <div class="text">Caption Two</div>
+        </div>
+
+        <div class="mySlides fade">
+          <!-- <div class="numbertext">3 / 3</div> -->
+          <img src="Ayodhya Image/photo3.jpg" width="1515" height="300">
+          <div class="text">Caption Three</div>
+        </div>
+
+      </div>
+      <br>
+
+      <div style="text-align:center">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+      </div>
+
+        <h2 class="font-size"> About </h2>
+<div class="bg-image">
+        <!-- paragraph decoration  -->
+        <p style="color: beige; font-family: Arial, Helvetica, sans-serif;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis, quos nemo! Quae, consequuntur,
+          doloribus saepe quos, porro ipsum nesciunt eius officiis sunt est velit? Cupiditate libero molestias maiores
+          repellendus ea perferendis unde deleniti? Quas itaque distinctio error officiis molestiae voluptatum fugiat
+          odio. Perferendis voluptates, perspiciatis, eos sapiente natus nesciunt accusamus dolorum, doloribus officiis
+          earum veniam sint possimus. Qui quibusdam assumenda, optio numquam non dolorum dolores ratione. Unde iusto
+          itaque eaque repellendus earum suscipit officia, nesciunt consequuntur ea vitae dignissimos a, quo,
+          accusantium
+          similique deleniti dicta iure officiis? Aut quo sapiente beatae. Quidem totam aliquam odit officiis maiores
+          nesciunt nobis, blanditiis reprehenderit, nostrum sit incidunt, nam quia non quasi esse cumque veniam at eaque
+          dicta omnis nihil. Neque iure aperiam tempora alias sint sunt. Perferendis corporis porro sed nostrum deserunt
+          est possimus debitis, qui illum eum nemo rem assumenda repellendus esse ad ex nulla molestias dolores optio
+          dicta, atque non quaerat voluptas. Nesciunt eum molestiae obcaecati ducimus maiores aut consequatur velit
+          possimus commodi beatae iusto omnis cupiditate, officia itaque quis totam dicta perspiciatis? Libero ullam vel
+          ut quae hic pariatur voluptas dolor, consectetur maiores dolores incidunt perspiciatis cum reiciendis sunt
+          saepe
+          ipsa a adipisci ex quas sequi cumque dolorem porro! A, laborum porro accusamus molestias voluptatem aspernatur
+          aperiam! Tempore incidunt consectetur dignissimos vel atque ut ipsum alias officia, at, ipsa aut aspernatur
+          molestiae! Iste repudiandae ipsum natus aliquam? Et dolores necessitatibus similique reiciendis porro
+          assumenda
+          molestiae dignissimos neque autem distinctio voluptatibus commodi, fuga deleniti tempore fugiat placeat eum
+          voluptas aspernatur. Ut molestiae laudantium similique quae iste error officia quo eum numquam neque culpa
+          minus
+          quas adipisci ullam exercitationem nobis animi maxime ex illo, eveniet accusantium. Expedita autem fuga
+          possimus
+          nesciunt tempore magnam quae non! Cumque eius mollitia temporibus obcaecati voluptate eaque est ab, magni qui
+          quas facilis odit illo quidem rem!</p>
+    </section>
+  </div>
+    <hr class="horizental">
+
+    <!-- owner profile details -->
+    <section>
+
+      <h2 class="font-size">Developed By</h2>
+      <div class="container">
+        <img src="Ayodhya Image/DP.png" alt="DP" class="DP">
+        <div class="overlay">Er. Shreyansh Bajpai <br>
+          (Web Developer)
+        </div>
+      </div>
+      <br>
+
+      <h2 class="font-size">Designed By</h2>
+      <div class="container">
+        <img src="Ayodhya Image/DP.png" alt="PD" class="designer">
+        <div class="PD">Er. Amil Ali <br>
+          (UI/UX Designer)
+        </div>
+      </div>
+
+    </section>
+    <br>
+    <br>
+    <br>
+  </main>
+
+  <!-- footer decoration  -->
+  <footer>
+    <a href="#">FAQ</a>
+    <a href="#">Privacy Policy</a>
+    <a href="#">Disclaimer</a>
+    <a href="#">Contact US</a>
+    <a class="copyright" href="#">Copyright &copy;2021 | Ayodhya Tourism</a>
+  </footer>
+
+  <!-- slider using javascript -->
+  <script>
+    var slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) { slideIndex = 1 }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex - 1].style.display = "block";
+      dots[slideIndex - 1].className += " active";
+      setTimeout(showSlides, 5000); // Change image every 4 seconds
+    }
+  </script>
+
+
+</body>
+
+</html>
